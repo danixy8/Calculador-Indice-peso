@@ -1,0 +1,37 @@
+
+.sexo{
+  font-size: 40px;
+}
+
+.estiloNumero{
+  font-size: 32px;
+  font-weight: 800;
+  margin-top: -25px;
+}
+
+.cm{
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: -5px;
+}
+
+.custom-range::-webkit-slider-thumb {
+  background: #4336a5;
+}
+
+.form-range {
+  padding: 0px 20px;
+}
+
+.sumaResta{
+  cursor: pointer;
+  background-color: #4336a5;
+  padding: 7px;
+  border-radius: 15px;
+  margin-left: 3px;
+}
+
+.sexoActivado{
+  background-color: #4336a580;
+  border-radius: 20px;
+}

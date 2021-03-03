@@ -1,1 +1,94 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  background: rgb(161,74,86);
+  background: linear-gradient(90deg, rgba(161,74,86,1) 3%, rgba(121,9,113,1) 48%, rgba(0,212,255,1) 100%);
+}
+
+.titulo{
+  font-family: 'Lato', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.row{
+  margin-top: 20px;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.fondoItem{
+  background-color: #ff11151c;
+  height: 130px;
+  border-radius: 20px;
+}
+
+
+
+.btn-color {
+  text-transform: uppercase;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #4336a5;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 25px;
+}
+
+.btn-color:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 25px;
+}
+
+.btn-color:active {
+  color: #4336a5
+}
+
+.btn-color:active:after {
+  background: transparent;
+}
+
+.btn-color:hover:before {
+  opacity: 1;
+}
+
+.btn-color:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #4336a5;
+  left: 0;
+  top: 0;
+  border-radius: 25px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+};
